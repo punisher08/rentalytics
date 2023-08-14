@@ -1,0 +1,665 @@
+/* header */
+@media screen and (max-width:1280px){
+    .header .nav_list li{
+        margin: 1rem;
+    }
+    .header svg{
+        margin: 10px 50px;
+
+    }
+}
+@media  screen and (max-width:1024px) {
+    .header .nav_list li{
+        margin: .5rem;
+        font-size: 1rem;
+    }
+    .header svg{
+        width: 40px;
+        height: 40px;
+        margin: 10px 20px;
+        cursor: pointer;
+    }
+    .header .logo{
+        margin-left: 70px;
+    }
+    
+}
+@media  screen and (max-width:920px) {
+    .header .nav_list, .header svg{
+    display: none;
+    }
+    .side__nav{
+        display: flex;
+    }
+    .header .nav_list{
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: 100vh;
+        right: -100%;
+        padding:1rem;
+        transition: 0.4s;
+        text-align: center;
+        background-color: #fff;
+        z-index: 1;
+    }
+    .header svg.active{
+        display: inline-flex;
+        margin-top: 50px;
+    }
+    .header .nav_list li{
+        margin-top:50px;
+
+    }
+    .header .nav_list.active{
+        right: 0;
+        display: block;
+        z-index: 1;
+      
+    }
+    .side__nav.active  .bar__renter:nth-child(2){
+        opacity: 0;
+    }
+    .side__nav.active  .bar__renter:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    .side__nav.active  .bar__renter:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    .header .logo{
+        margin-left: 50px;
+    }
+
+}
+@media  screen and (max-width:640px) {
+    .header .logo{
+        margin-left: 0;
+    }
+
+}
+/* infor renter */
+
+@media screen and (max-width:1024px) {
+    .back-button-renter{
+        width: 80%;
+    }
+    .renter-details-wrapper{
+        width: 70%;
+        padding: 1.5rem;
+    }
+    .renter-details-container{
+        padding: 1.5em;
+    }
+}
+@media screen and (max-width:780px) {
+    .back-button-renter{
+        width: 90%;
+    }
+    .renter-details-wrapper{
+        width: 80%;
+        padding: 1.2rem;
+    }
+    .renter-details-container{
+        padding: 1.2em;
+    }
+}
+@media screen and (max-width:640px) {
+    .back-button-renter{
+        width: 100%;
+        padding: .5em;
+    }
+    .renter-details-wrapper{
+        width: 100%;
+        padding: 1.3rem;
+    }
+    .renter-details-container{
+        padding: .5em;
+    }
+    .renter-details-wrapper div button{
+        left:40%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+/* @media screen and (max-width:320px) {
+ 
+} */
+
+
+/* profile tab */
+@media  screen and (max-width:1280px) {
+    .profile-wrapper{
+        left: 70%;
+        width: 50%;
+        padding: .8rem 1.5rem;
+    }
+    
+}
+@media  screen and (max-width:1024px) {
+    .profile-wrapper{
+        left: 60%;
+        width: 60%;
+        padding: .8rem 1.5rem;
+    }
+        
+}
+@media  screen and (max-width:780px) {
+    .profile-wrapper{
+        left:25%;
+        width: 80%;
+        padding: .8rem 1.5rem;
+    }
+        .profile-title{
+            width: 90%;
+        }
+
+}
+@media  screen and (max-width:540px) {
+    .profile-wrapper{
+        left: 0%;
+        width: 100%;
+        padding: .8rem 1.5rem;
+    }
+}
+
+/* rating review */
+@media screen and (max-width:1280px){
+    .back-button h2{
+        margin: 0 100px;
+        font-size:1.5rem ;
+    }
+    .back-button button{
+        margin-right: 170px;
+    
+    }
+}
+@media screen and (max-width:1024px){
+    .back-button h2{
+        margin: 0 70px;
+        font-size:1.3rem ;
+    }
+    .back-button button{
+        margin-right: 90px;
+    }
+}
+@media screen and (max-width:780px){
+    .back-button h2{
+        margin: 0 50px;
+        font-size:1.2rem ;
+    }
+    .back-button button{
+        display: none;
+    }
+    .reminder{
+        text-align: center;
+        text-indent: unset;
+    }
+}
+@media screen and (max-width:460px){
+    .back-button h2{
+        margin:0;
+        font-size:1.1rem ;
+    }
+    .place-name{
+        padding: .8em;
+    }
+    .description-title{
+        padding: .5em 0;
+    }
+    .description-title p{
+        text-align: center;
+    }
+    .text-area{
+        padding: 0 .5em;
+    }
+    .rating p{
+        text-align: center;
+    } 
+}
+
+/* search place */
+@media screen and  (max-width:1280px){
+    .search-wrapper{
+        width: 80%;
+    }
+    .search-container{
+        padding: 1em;
+    }
+    .type-area input{
+        margin: 0 .7em;
+    }
+    .bed-area, .bath-area{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex ;
+        overflow: scroll ;
+        margin-right: -24px ;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none !important ;
+    }
+    .btn-bath, .btn-bed{
+        -moz-box-direction: normal;
+        -moz-box-orient: horizontal;
+        display: flex ;
+        padding-right: 10px ;
+        scrollbar-width: none!important;
+    }
+    
+}
+
+@media screen and  (max-width:1030px){
+    .search-wrapper{
+        width: 90%;
+        padding:1rem;
+    }
+    .search-container{
+        padding: .8em;
+    }
+
+    .type-area input{
+        width: 9em;
+        margin: 0 .4em;
+        padding: 1em .5rem;
+    }
+    .price-area input{
+        width: 40%;
+    }
+}
+
+@media screen and  (max-width:780px){
+    .search-wrapper{
+        width: 100%;
+    }
+    .search-area input{
+        width: 100%;
+    }
+    .button-search-area h3{
+        font-size:1.2em;
+    }
+    .button-search-area  button{
+        width: 5em;
+    }
+    .search-container{
+        padding: .5em;
+    }
+    .type-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .type-area h3{
+        width: 100%;
+    }
+    .type-area input{
+        margin-top:10px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    .price-area input{
+        margin-left: .5rem;
+        margin-right: .5rem;
+        padding: 1rem;
+    }
+    .search-area ul{
+        width: 90%;
+    }
+}
+
+@media screen and  (max-width:460px){
+    .type-area input{
+        width: 100%;
+    }
+
+}
+
+
+
+
+/* to go */
+/* @media screen and (max-width:1280px){
+    
+}
+
+@media screen and (max-width:1024px){
+    
+}    */
+
+@media screen and (max-width:768px){
+    .to-go-wrapper{
+        width: 100%;
+        padding: .5rem;
+    }
+}
+
+@media screen and (max-width:680px){
+    .to-go-container{
+        padding: 0;
+    }
+}
+
+
+/* @media screen and (max-width:480px){
+    
+} */
+
+
+
+/* view place */
+@media screen and (max-width:1280px){
+    .view-place-wrapper{
+        width: 85%;
+    }
+}   
+
+@media screen and (max-width:1024px){
+    .view-place-wrapper{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:780px){
+    .two-button button{
+        width: 85%;
+    }
+    .place-location{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .description-area{
+        padding: .5rem;
+    }
+    .two-button{
+        padding: .5rem;
+    }
+    .view-place-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-area{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:680px){
+    .place-location{
+        width: 90%;
+    }
+    .image-area{
+        width: 90%;
+    }
+    .view-place-container{
+        top: 10%;
+    }
+}
+
+@media screen and (max-width:475px){
+    .image-area{
+        width: 100%;
+    }
+}
+
+
+
+/* reservation places */
+/* @media screen and (max-width:1444px){
+
+} */
+@media screen and (max-width:1280px){
+    .reserve-container{
+        padding:1.8rem;
+    }
+}
+@media screen and (max-width:1024px){
+    .reserve-wrapper{
+        padding:2rem;
+    }
+    .reserve-container{
+        padding:1.5rem;
+    }
+}
+@media screen and (max-width:768px){
+    .reserve-wrapper{
+        padding: 1.5rem;
+    }
+    .reserve-container{
+        padding:1rem;
+    }
+}
+@media screen and (max-width:680px){
+    .reserve-container{
+        padding:.5rem;
+    }
+    .reserve-wrapper{
+        padding: 1rem;
+    }
+
+}
+@media screen and (max-width:475px){
+    .reserve-wrapper{
+        padding: .5rem;
+    }
+}
+
+
+/* password change form */
+@media  screen and (max-width:1280px) {
+    .drawer-chg-form{
+        width: 60%;
+    }
+}
+
+@media  screen and (max-width:1024px) {
+    .drawer-chg-form{
+        width: 70%;
+    }
+}
+@media  screen and (max-width:768px) {
+    .drawer-chg-form{
+        width: 80%;
+    }
+    .chg-title button{
+        display: none;
+    }
+    .chg-title h3{
+     width: 90%;
+    }
+}
+@media  screen and (max-width:680px) {
+    .drawer-chg-form{
+        width:95%;
+    }
+    .drawer-chg-form div input{
+        margin-top: 20px;
+        margin-left: 0;
+        width:70vw;
+    }
+    .drawer-chg-form div label{
+        display: flex;
+    }
+    
+}
+@media  screen and (max-width:475px) {
+    .drawer-chg-form div input{
+        width:80vw;
+    }
+}
+
+
+
+/* confirm form  */
+@media screen and (max-width:1280px){
+    .conf_drawer{
+        width: 50%;
+    }
+}
+@media screen and (max-width:1024px){
+    .conf_drawer{
+        width: 60%;
+    }
+}
+@media screen and (max-width:920px){
+    .conf_title button{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .conf_drawer{
+        width: 80%;
+    }
+}
+@media screen and (max-width:680px){
+    .conf_drawer{
+        width: 90%;
+    }
+    .conf_drawer div label{
+        display: flex;
+    }
+    .conf_drawer div input{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:475px){
+    .conf_title h3{
+        width: 100%;
+    }
+}
+
+
+/* deposit info */
+
+@media screen and (max-width:1280px){
+
+}
+@media screen and (max-width:1024px){
+    .drawer__deposit{
+        width: 60%;
+    }
+}
+@media screen and (max-width:920px){
+    .deposit__title button{
+        display: none;
+    }
+    .deposit__title h3{
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px){
+    .drawer__deposit{
+        width:70%;
+    }
+}
+@media screen and (max-width:680px){
+    .drawer__deposit{
+        width: 100%;
+    }  
+    .deposit__title h3{
+        font-size: 1.2rem;
+        width: 90%;
+    }
+}
+    
+@media screen and (max-width:475px){
+    .drawer__deposit{
+        width: 100%;
+        padding: .5rem;
+    }
+}
+
+
+/* home */
+/* @media screen and (max-width:1280px){
+
+}
+
+@media screen and (max-width:1024px){
+
+} */
+
+
+@media screen and (max-width:768px){
+    .home-brows-title{
+        padding: .5rem;
+        margin-left: 0;
+        font-size: 1.5em;
+    }
+    .title-recommend{
+        padding: .5rem;
+        font-size: 1.2em;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:680px){
+    .property-type ul li{
+        margin: 0 .5rem;
+    
+    }
+    .property-type ul li p{
+        font-size: .85rem;
+        }
+}
+@media screen and (max-width:768px){
+    .property-type{
+       display: none;
+    
+    }
+  
+}
+
+/* @media screen and (max-width:475px){
+
+} */
+
+
+
+/* seetings */
+
+@media screen and (max-width:1280px){
+    .rnt__drawer{
+        width: 55%;
+    }
+}   
+
+@media screen and (max-width:1024px){
+    .rnt__drawer{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:780px){
+    .rnt__drawer{
+        width: 75%;
+    }
+    .rnt__title button{
+        display: none;
+    }
+    .rnt__title h3{
+       width:80%;
+    }
+    
+}
+
+@media screen and (max-width:660px){
+    .rnt__drawer{
+        width: 85%;
+    }
+    .rnt__wrapper{
+        padding: .5rem;
+    }
+    .rnt__title h3{
+        width:90%;
+     }
+}
+
+@media screen and (max-width:475px){
+    .rnt__drawer{
+        width: 100%;
+    }
+}

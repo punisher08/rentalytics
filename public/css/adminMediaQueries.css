@@ -1,0 +1,701 @@
+/* admin header */
+@media screen and (max-width:1280px){
+    .header_A .admin__tab li{
+        margin: .4rem 2rem;
+    }
+    .header_A .admin__tab li a{
+        font-size: 1rem;
+    }
+    .header_A .logo{
+        margin: 0 1.1rem 0;
+    }
+    .header_A svg{
+        margin: .5rem 2rem;
+    }
+}
+@media screen and (max-width:1024px){
+    .header_A .admin__tab li{
+        margin: .4rem .5rem;
+    }
+    .header_A .logo{
+        margin: 0 1rem 0;
+    }
+    .header_A svg{
+        margin: .5rem 1rem;
+    }
+}
+@media screen and (max-width:768px){
+    .header_A{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header_A .admin__tab, .header svg{
+        display: none;
+    }
+    .sub__nav{
+        display: flex;
+    }
+    .header_A .admin__tab{
+        display: block;
+        position: absolute;
+        top: 69px;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: 0.4s;
+        background-color: #fff;
+    }
+    .header_A .logo{
+        position: relative;
+    }
+    .header_A .admin__tab li{
+        margin: 1rem 0;
+    }
+    .header_A .admin__tab li a{
+        border: none;
+        font-size: 1.5rem;
+    }
+    .header_A ul.active{
+        left: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+    }
+    .header_A svg.active{
+        display: inline-flex;
+    }
+    .sub__nav.active .bar__:nth-child(2){
+        opacity: 0;
+    }
+    .sub__nav.active .bar__:nth-child(1){
+        transform: translateY(12px) rotate(45deg);
+    }  
+    .sub__nav.active .bar__:nth-child(3){
+        transform: translateY(-12px) rotate(-45deg);
+    } 
+    
+}
+@media screen and (max-width:680px){
+    .header_A .logo{
+        margin: 0;
+    }
+}
+
+
+/* admin details */
+@media screen and (max-width:1280px){
+    .admin-details-wrapper{
+        width: 60%;
+        padding: 2.5rem;
+    }
+    .title- h2{
+        width: 70%;
+    }
+    .admin-details-container{
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:1024px){
+    .admin-details-wrapper{
+        width: 70%;
+        padding: 2rem;
+    }
+    .title- h2{
+        width: 80%;
+    }
+    .admin-details-container{
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-width:768px){
+    .admin-details-wrapper{
+        width: 90%;
+    }
+    .title- h2{
+        width: 100%;
+    }
+    .admin-details-container{
+        padding: 1rem;
+    }
+    .admin-details-wrapper button{
+        left:40%;
+    }
+}
+@media screen and (max-width:680px){
+    .admin-details-wrapper{
+        width: 100%; 
+    }
+}
+
+/* manage title */
+@media screen and (max-width:950px){
+    .manage-title{
+        margin-left: 1rem;
+        width: 80%;  
+    }
+    .manage-title h2{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:660px){
+    .manage-title h2{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:340px) {
+    .manage-title h2{
+        font-size: 1rem;  
+    }
+}
+
+
+
+/* map admin */
+@media screen and (max-width:1280px) {
+    .mapAdmin__drawer{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .mapAdmin__drawer{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px) {
+    .mapAdmin__drawer{
+        width: 90%;
+    }
+    .admin_clust{
+        font-size: 1rem;
+    }
+    .admin_clust i{
+        margin-left: .5rem;
+    }
+}
+@media screen and (max-width:680px) {
+    .mapAdmin__drawer{
+        width:100%;
+    }
+}
+/* @media screen and (max-width:475px) {
+    
+} */
+
+
+/* admin setings */
+@media screen and (max-width:1300px){
+    .profile-wrapper{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1100px){
+    .profile-wrapper{
+        width: 70%;
+    }
+}
+@media screen and (max-width:1000px){
+    .profile-wrapper button{
+        width: 250px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    } 
+    .profile-wrapper{
+        width: 80%;
+    }
+}
+@media screen and (max-width:700px){
+    .profile-wrapper{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .profile-wrapper{
+        width:100%;
+    }
+    .profile-wrapper button{
+        width: 250px;
+    }
+
+}
+@media screen and (max-width:590px){
+    .profile-wrapper button{
+        width: 300px;
+    }
+    .profile-wrapper{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:300px){
+    
+    .profile-container{
+        padding: .5rem;
+    }
+}
+
+
+
+
+
+
+/* analytics mon and yr */
+@media screen and (max-width:1280px){
+    .analytics-wrapper{
+        width: 80%;
+    }
+}
+@media screen and (max-width:1024px){
+    .analytics-wrapper{
+        width: 90%;
+    }
+    .analytics-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 2fr);
+        gap: 2rem;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:760px){
+    .analytics-wrapper{
+        width: 100%; 
+    }
+    .analytics-wrapper button{
+        min-width: 90px;
+        padding: 12px;
+        font-size: 16px;
+    }   
+    .back-button button{
+        display: none;
+    }
+}
+/* @media screen and (max-width:640px){
+    
+}
+@media screen and (max-width:475px){
+    
+} */
+
+
+/* barangay rental manage */
+@media screen and (max-width:1280px){
+    .barangay-rental-wrapper{
+        grid-gap: 2px .5em;
+        width: 80%;
+    }
+    .barangay-data-wrapper{
+        width: 80%;
+    }
+}
+@media screen and (max-width:1024px){
+    .barangay-rental-wrapper{
+        grid-gap: 2px .5em;
+        width: 90%;
+    }
+    .barangay-rental-wrapper div p{
+        font-size: 1em;
+    }
+    .barangay-data-wrapper{
+        width: 90%;
+    }
+}
+@media screen and (max-width:768px){
+    .barangay-rental-wrapper{
+        grid-gap: 2px .5em;
+        width: 100%;
+
+    }
+    .barangay-rental-wrapper div p{
+        font-size: 1em;
+    }
+    .barangay-data-wrapper{
+        width: 100%;
+    }
+    .back-button{
+        display: block;
+        justify-content: start;
+    }
+    .back-button button{
+        display: none;
+
+    }
+    .barangay-rental-container{
+        
+        padding:0 0 10px 0;
+    }
+    .barangay-rental-wrapper{
+        background-color: #fff;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .barangay-data-wrapper{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3, 2fr);
+        grid-gap: 0;
+    }
+    .barangay-button button{
+        width: 80%;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding: .4rem;
+    }
+    
+}
+/* @media screen and (max-width:640px){
+    
+}
+@media screen and (max-width:475px){
+    
+} */
+
+
+
+
+/* change pass */
+
+@media screen and (max-width:1280px){
+    form{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1024px){
+    form{
+        width: 70%;
+    }
+.change-container{
+    padding: 2rem;
+    }
+}
+@media screen and (max-width:760px){
+    form{
+        width: 90%;
+    }
+.change-container{
+    padding: 1.5rem;
+    }
+}
+@media screen and (max-width:640px){
+    .change-wrapper {
+        padding: 1rem;
+    }
+    form{
+        width: 100%;
+    }
+    .change-container{
+        padding: .5rem;
+    }
+.change-wrapper input{
+    margin:1rem;
+    width: 90%;
+        }
+.change-wrapper label{
+    font-size: 1rem;
+    margin-left: 2rem;
+    }
+}
+/* @media screen and (max-width:475px){
+            
+} */
+
+
+
+
+/* credentials */
+@media screen and (max-width:1280px){
+    .credentail-wrapper{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1024px){
+    .credentail-wrapper{
+    width: 70%;
+}
+}
+@media screen and (max-width:800px){
+    .credentail-wrapper{
+        width: 85%;
+    }
+}
+@media screen and (max-width:680px){
+    .credentail-wrapper{
+        width: 100%;
+    }
+    .username-label{
+        padding-right: 0;
+    }
+    .credential-container{
+        padding: 5px;
+    }
+
+
+}
+/* @media screen and (max-width:475px){
+} */
+
+
+/* dash admin */
+@media screen and (max-width:1024px){
+    .container{
+        padding: 25px 35px;
+    }
+    .admin-tabs{
+        width: 80%;
+    }
+}
+@media screen and (max-width:780px){
+    .container{
+        padding: 20px 30px;
+    }
+    .admin-tabs{
+        width: 90%;
+    }
+}
+@media screen and (max-width:460px){
+    .container{
+        padding: 20px;
+    }
+    .admin-tabs{
+        width: 100%;
+    }
+}
+
+
+
+/* manage accounts */
+
+@media screen and (max-width:1280px){
+    .labels{
+        width: 80%;
+    }
+    .user-data{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width:1024px){
+    .labels{
+        width: 90%;
+    }
+    .user-data{
+        width: 90%;
+    }
+    .labels h2{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:768px){
+    .labels{
+        width: 100%;
+    }
+    .user-data{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 100px;
+    }
+    .labels h2{
+        font-size: 1.1rem;
+    }
+}
+/* @media screen and (max-width:680px){
+
+}
+@media screen and (max-width:475px){
+    
+} */
+
+
+/* view verify */
+
+@media screen and (max-width:1280px){
+    .verify-details{
+        width: 80%; 
+    }
+}
+@media screen and (max-width:1024px){
+    .verify-details{
+        width: 90%; 
+    }
+}
+@media screen and (max-width:768px){
+    .verify-details{
+        width: 100%; 
+        padding: .5rem;
+    }
+}
+@media screen and (max-width:680px){
+    .verify-details{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* @media screen and (max-width:475px){
+} */
+
+
+
+/* view account */
+
+@media screen and (max-width:1280px){
+    .account-data{
+        width: 75%;
+    }
+}
+@media screen and (max-width:1024px){
+    .account-data{
+        width: 80%;
+    }
+    .account-details{
+        padding: 15px;
+    }
+}
+@media screen and (max-width:768px){
+    .account-data{
+        width: 90%;
+    }
+    .account-details{
+        padding: 10px;
+    }
+    .account-data{
+        display: flex;
+        flex-direction: column;
+    }
+    .verify-account button{
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+    .account-action button{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .post-place button{
+        width: 70px;
+        padding: .5rem;
+    }
+}
+@media screen and (max-width:680px){
+    .account-data{
+        width: 100%;
+    }
+    .account-details{
+        padding: 5px;
+    }
+}
+/* @media screen and (max-width:475px){
+} */
+
+
+
+/* manage rental place */
+
+@media screen and (max-width:1280px) {
+    .places-wrapper{
+        width: 75%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .places-wrapper{
+        width: 85%;
+    }
+    .searh-engine-places{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px) {
+    .places-container{
+        padding: 5px;
+    }
+    .places-wrapper{
+        width: 90%;
+        
+    }
+    .searh-engine-places{
+        width: 90%;
+    }
+    .searh-engine-places button{
+        width: 20%;
+        padding: 10px;
+    }
+    .places-wrapper .card-barangay{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:680px) {
+    .places-wrapper{
+        width: 100%;
+    }
+    .searh-engine-places{
+        width: 100%;
+    }
+}
+/* @media screen and (max-width:475px) {
+    
+} */
+
+
+
+
+
+
+/* term and policies */
+@media  screen and (max-width:1280px) {
+    .terms-wrapper{
+        width: 70%;
+    }
+}   
+
+@media  screen and (max-width:1024px) {
+    .terms-wrapper{
+        padding: 1.5rem;
+        width: 80%;
+    }
+    .terms-container button{
+        left:80%;
+    }
+    .manage-title h2{
+        font-size: 1.2rem;
+        width: 80%;
+    }
+}
+
+@media  screen and (max-width:768px) {
+    .terms-wrapper{
+        padding: 1rem;
+        width: 90%;
+    }
+    
+    .terms-container button{
+        left:70%;
+    }
+}
+
+@media  screen and (max-width:680px) {
+    .terms-wrapper{
+        padding: .5rem;
+        width: 100%;
+    }
+    .manage-title{
+        font-size: .8rem;
+        width: 100%;
+        margin: 0;
+    }
+    .manage-title h2{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+}
+/* @media  screen and (max-width:475px) {
+    
+} */
