@@ -6,7 +6,7 @@
                 <a href="{{route('admin-accounts')}}"><button type="button">Manage Accounts</button></a>
             </div>
             <div>
-                <a href="analyticsYrAdmin.php"><button type="button">Data Analytics Reports</button></a>
+                <a href="{{route('admin-data-analytics')}}"><button type="button">Data Analytics Reports</button></a>
             </div>
             <div>
                 <a href="mapAdmin.php"><button type="button">View Map</button></a>

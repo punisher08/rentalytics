@@ -27,17 +27,17 @@
             <h1 class="logo">RENTALYTICS</h1>
             <ul class="nav_list">
                 <li> 
-                    <a href="{{route('renter-dasboard')}}">HOME</a>
+                    <a href="{{route('renter-dashboard')}}">HOME</a>
                 </li >
                 <li > 
                     <a href="{{route('renter-search')}}">SEARCH</a>
                 </li >
                     
                 <li > 
-                    <a href="{{route('renter-dasboard')}}">RESERVATION</a>
+                    <a href="{{route('renter-dashboard')}}">RESERVATION</a>
                 </li>
                 <li> 
-                    <a href="{{route('renter-dasboard')}}">INBOX</a>
+                    <a href="{{route('renter-dashboard')}}">INBOX</a>
                 </li>
                 
                 <a href="{{route('renter-profile')}}">

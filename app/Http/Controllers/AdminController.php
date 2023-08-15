@@ -2,17 +2,22 @@
 
 namespace App\Http\Controllers;
 
+
+use Illuminate\Support\Facades\Auth;
+use \App\Models\User;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    //
+
     public function dashboard(){
+
         return view('admin.index');
     }
 
     public function accounts(){
-        return view('admin.accounts');
+        $users = User::all();
+        return view('admin.accounts',compact('users'));
     }
 
     public function accountDetails(){
@@ -26,5 +31,21 @@ class AdminController extends Controller
     }
     public function termsAndPolicies(){
         return view('admin.terms-and-policies');
+    }
+    public function userDetails($id){
+        $user = User::find($id);
+        return view('admin.account-details',compact('user'));
+    }
+    public function dataAnalytics(){
+        
+        return view('admin.data-analytics');
+    }
+    public function rentalPlaces(){
+        
+        return view('admin.rental-places');
+    }
+    public function rentalAccountDetails(){
+        
+        return view('admin.rental-account-details');
     }
 }

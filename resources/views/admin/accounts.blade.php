@@ -2,60 +2,17 @@
 @section('content')
 <div class="user-container">
             <div class="user-data">
+                @foreach ($users as $user)
                 <div>
-                    <h2>3121</h2>
+                    <h2>{{$user->id}}</h2>
                 </div>
                 <div>
-                    <h2>Renter</h2>
+                    <h2>{{$user->role}}</h2>
                 </div>
                 <div>
-                    <a href="{{route('admin-details')}}"><button>View</button></a>
+                    <a href="/admin/{{$user->id}}/details"><button>View</button></a>
                 </div>
-                <div>
-                    <h2>2923</h2>
-                </div>
-                <div>
-                    <h2>Owner</h2>
-                </div>
-                <div>
-                    <a href="{{route('admin-details')}}"><button>View</button></a>
-                </div>
-                <div>
-                    <h2>3121</h2>
-                </div>
-                <div>
-                    <h2>Renter</h2>
-                </div>
-                <div>
-                    <a href="{{route('admin-details')}}"><button>View</button></a>
-                </div>
-                <div>
-                    <h2>3121</h2>
-                </div>
-                <div>
-                    <h2>Renter</h2>
-                </div>
-                <div>
-                    <a href="{{route('admin-details')}}"><button>View</button></a>
-                </div>
-                <div>
-                    <h2>3121</h2>
-                </div>
-                <div>
-                    <h2>Renter</h2>
-                </div>
-                <div>
-                    <a href="{{route('admin-details')}}"><button>View</button></a>
-                </div>
-                <div>
-                    <h2>3121</h2>
-                </div>
-                <div>
-                    <h2>Renter</h2>
-                </div>
-                <div>
-                    <a href="{{route('admin-details')}}"><button>View</button></a>
-                </div>
+                @endforeach
             </div>
         </div>
         </div>

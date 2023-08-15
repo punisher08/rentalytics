@@ -8,7 +8,7 @@
             <div class="profile-container">
                 <div class="profile-wrapper">
                     <div>
-                        <a href="mngrentalplace.php"><button type="button">Manage Rental Places</button></a>
+                        <a href="{{route('admin-rental-places')}}"><button type="button">Manage Rental Places</button></a>
                     </div>
                     <div>
                         <a href="{{route('admin-credentials')}}"><button type="button">Credentials</button></a>

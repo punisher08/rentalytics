@@ -26,7 +26,7 @@
         <h1 class="logo">RENTALYTICS</h1>
             <ul class="admin__tab">
                 <li> 
-                    <a href="{{route('admin-dasboard')}}">HOME</a>
+                    <a href="{{route('admin-dashboard')}}">HOME</a>
                 </li>
                 
                 <li> 
@@ -67,5 +67,6 @@
             @yield('content')
         </main>
     </div>
+    @yield('scripts')
 </body>
 </html>

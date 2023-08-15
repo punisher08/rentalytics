@@ -20,6 +20,8 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('data-analytics', require('./components/DataAnalyticsComponent.vue').default);
+Vue.component('rental-places', require('./components/RentalPlacesComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
