@@ -19,6 +19,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
     <link href="{{ asset('css/adminMediaQueries.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/scss/admin.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">

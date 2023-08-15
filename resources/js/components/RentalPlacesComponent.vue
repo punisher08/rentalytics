@@ -1,11 +1,6 @@
 <template>
     <div class="">
        <section class="rental-places" v-if="selectedBarangay === null">
-            <div class="back-button">
-            <h2>Manage Rental Places</h2>
-                <a href="adminSettings.php"><button type="button">Back</button></a>
-            </div>
-
             <div class="search-engine">
                 <div class="searh-engine-places">
                     <input type="text" placeholder="Select Barangay" v-model="search" >
@@ -28,10 +23,10 @@
             <table class="rental-places-table">
                 <thead>
                     <tr>
-                        <th>Place ID</th>
-                        <th>Ratings</th>
-                        <th>Reviews</th>
-                        <th>Actions</th>
+                        <th><a href="">Place ID</a></th>
+                        <th><a href="">Ratings</a></th>
+                        <th><a href="">Reviews</a></th>
+                        <th><a href="">Actions</a></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -102,6 +97,60 @@
                             {id:'0130',rating:'5.0',reviews:'79'},
                         ]
                     },
+                    {
+                        name:'Tarlac',
+                        rental_places:[
+                            {id:'0127',rating:'4.7',reviews:'79'},
+                            {id:'0128',rating:'5.0',reviews:'79'},
+                            {id:'0129',rating:'4',reviews:'79'},
+                            {id:'0130',rating:'5.0',reviews:'79'},
+                        ]
+                    },
+                    {
+                        name:'Amucao',
+                        rental_places:[
+                            {id:'0127',rating:'4.7',reviews:'79'},
+                            {id:'0128',rating:'5.0',reviews:'79'},
+                            {id:'0129',rating:'4',reviews:'79'},
+                            {id:'0130',rating:'5.0',reviews:'79'},
+                        ]
+                    },
+                    {
+                        name:'Balingcanaway',
+                        rental_places:[
+                            {id:'0127',rating:'4.7',reviews:'79'},
+                            {id:'0128',rating:'5.0',reviews:'79'},
+                            {id:'0129',rating:'4',reviews:'79'},
+                            {id:'0130',rating:'5.0',reviews:'79'},
+                        ]
+                    },
+                    {
+                        name:'Balsik',
+                        rental_places:[
+                            {id:'0127',rating:'4.7',reviews:'79'},
+                            {id:'0128',rating:'5.0',reviews:'79'},
+                            {id:'0129',rating:'4',reviews:'79'},
+                            {id:'0130',rating:'5.0',reviews:'79'},
+                        ]
+                    },
+                    {
+                        name:'Bantog',
+                        rental_places:[
+                            {id:'0127',rating:'4.7',reviews:'79'},
+                            {id:'0128',rating:'5.0',reviews:'79'},
+                            {id:'0129',rating:'4',reviews:'79'},
+                            {id:'0130',rating:'5.0',reviews:'79'},
+                        ]
+                    },
+                    {
+                        name:'Tarlac',
+                        rental_places:[
+                            {id:'0127',rating:'4.7',reviews:'79'},
+                            {id:'0128',rating:'5.0',reviews:'79'},
+                            {id:'0129',rating:'4',reviews:'79'},
+                            {id:'0130',rating:'5.0',reviews:'79'},
+                        ]
+                    },
                 ]
 
             }
@@ -133,11 +182,21 @@
     width: 100%;
     padding: 20px;
 }
-.rental-places-table th{
+.rental-places-table th {
+   text-align: center;
+}
+.rental-places-table th a{
     background-color: #457e8a;
     border-radius: 10px;
     color: #fff;
     font-size: 1.2em;
     padding: 5px 70px;
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.detailed_list{
+    margin-top: 20px;
 }
 </style>

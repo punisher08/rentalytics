@@ -37,7 +37,6 @@ Route::prefix('admin')->middleware(['auth','verifyrole'])->group(function () {
     Route::get('/{id}/rental-account-details', [App\Http\Controllers\AdminController::class, 'rentalAccountDetails'])->name('admin-rental-account-details');
     
     // POST 
-    Route::get('/account/{id}/delete', [App\Http\Controllers\AdminController::class, 'deleteAccount'])->name('account-delete');
 });
 
 

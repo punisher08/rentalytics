@@ -1,0 +1,36 @@
+.account-details .account-data .row .col-md-6 p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.account-details .account-data .row .col-md-6 ._rental_places h4 {
+  font-weight: 700;
+}
+
+.account-details .account-data .row .col-md-6 ._rental_places ._grp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-details .account-data .row .col-md-6 ._rental_places ._grp p {
+  margin: 0;
+}
+
+.account-details .account-data .row .col-md-6 ._rental_places ._grp button {
+  width: 50px;
+  padding: 5px;
+  background-color: #457e8a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-box-shadow: -2px 5px #cccc;
+          box-shadow: -2px 5px #cccc;
+  margin-left: 25px;
+}
+/*# sourceMappingURL=admin.css.map */

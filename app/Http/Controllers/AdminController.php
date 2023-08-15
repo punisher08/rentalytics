@@ -52,6 +52,6 @@ class AdminController extends Controller
         $user = User::find($id);
         $user->delete();
         $users = User::where('role', '!=', 'admin')->get();
-        return view('admin.accounts',compact('users'));
+       return response()->json(['result' => true]);
     }
 }

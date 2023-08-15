@@ -449,7 +449,7 @@
         padding: 25px 35px;
     }
     .admin-tabs{
-        width: 80%;
+        /* width: 80%; */
     }
 }
 @media screen and (max-width:780px){
