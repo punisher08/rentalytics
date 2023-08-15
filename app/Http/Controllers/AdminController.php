@@ -16,7 +16,7 @@ class AdminController extends Controller
     }
 
     public function accounts(){
-        $users = User::all();
+        $users = User::where('role', '!=', 'admin')->get();
         return view('admin.accounts',compact('users'));
     }
 
@@ -47,5 +47,11 @@ class AdminController extends Controller
     public function rentalAccountDetails(){
         
         return view('admin.rental-account-details');
+    }
+    public function deleteAccount( $id ){
+        $user = User::find($id);
+        $user->delete();
+        $users = User::where('role', '!=', 'admin')->get();
+        return view('admin.accounts',compact('users'));
     }
 }

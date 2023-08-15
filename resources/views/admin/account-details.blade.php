@@ -10,7 +10,7 @@
         <div class="account-data">
             <div class="account">
                 <p>Account ID: {{$user->id}}</p>
-                <p>Type: {{$user->id}}{{$user->role}}</p>
+                <p>Type: {{$user->role}}</p>
             </div>
             <div class="user-account-details">
                 <p>Username: {{$user->name}}</p>
@@ -18,10 +18,10 @@
             </div>
             <div class="details">
                 <p>Name: {{$user->name}}</p>
-                <p>Brthdate: {{$user->id}}</p>
-                <p>Ages: {{$user->id}}</p>
-                <p>Sex: {{$user->id}}</p>
-                <p>Contact No: {{$user->id}}</p>
+                <p>Brthdate: {{$user->birthday}}</p>
+                <p>Age: {{$user->age}}</p>
+                <p>Sex: {{$user->gender}}</p>
+                <p>Contact No: {{$user->contact}}</p>
                 <p>Email: {{$user->email}}</p>
             </div>
             <div class="verify-account">
@@ -38,7 +38,7 @@
 
             <!-- action if may include here the active status of acc?? hihih-->
             <div class="account-action">
-                <button type="button">Delete Account</button>
+            <a href="{{route('account-delete',['id' => $user->id])}}"><button type="button">Delete Account</button></a>
             </div>
         </div>
     </div>

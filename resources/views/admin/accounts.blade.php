@@ -7,7 +7,7 @@
                     <h2>{{$user->id}}</h2>
                 </div>
                 <div>
-                    <h2>{{$user->role}}</h2>
+                    <h2>{{$user->name}}</h2>
                 </div>
                 <div>
                     <a href="/admin/{{$user->id}}/details"><button>View</button></a>

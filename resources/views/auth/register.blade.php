@@ -24,7 +24,71 @@
                                 @enderror
                             </div>
                         </div>
+                        <!-- additional -->
+                        <div class="row mb-3">
+                            <label for="birthday" class="col-md-4 col-form-label text-md-end">{{ __('Birthday') }}</label>
 
+                            <div class="col-md-6">
+                                <input id="birthday" type="date" class="form-control @error('birthday') is-invalid @enderror" name="birthday" value="{{ old('birthday') }}" required autocomplete="name" autofocus>
+
+                                @error('birthday')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="age" class="col-md-4 col-form-label text-md-end">{{ __('Age') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="age" type="number" class="form-control @error('age') is-invalid @enderror" name="age" value="{{ old('age') }}" required autocomplete="name" autofocus>
+
+                                @error('age')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <label for="gender" class="col-md-4 col-form-label text-md-end">{{ __('Gender') }}</label>
+                            <div class="col-md-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" {{ old('gender') === 'male' ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="male">{{ __('Male') }}</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female" {{ old('gender') === 'female' ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="female">{{ __('Female') }}</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="other" value="other" {{ old('gender') === 'other' ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="other">{{ __('Other') }}</label>
+                                </div>
+                                @error('gender')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="contact" class="col-md-4 col-form-label text-md-end">{{ __('Contact') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="contact" type="number" class="form-control @error('contact') is-invalid @enderror" name="contact" value="{{ old('contact') }}" required autocomplete="name" autofocus>
+
+                                @error('contact')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <!-- eo additional -->
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
