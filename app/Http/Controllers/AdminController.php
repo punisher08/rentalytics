@@ -48,10 +48,20 @@ class AdminController extends Controller
         
         return view('admin.rental-account-details');
     }
+ 
     public function deleteAccount( $id ){
         $user = User::find($id);
         $user->delete();
         $users = User::where('role', '!=', 'admin')->get();
        return response()->json(['result' => true]);
+    }
+
+    public function adminProfile(){
+        
+        return view('admin.profile');
+    }
+    public function getUser(){
+        $user = auth()->user();
+        return resposne()->json($user);
     }
 }

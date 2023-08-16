@@ -18,5 +18,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/account/{id}/delete', [App\Http\Controllers\AdminController::class, 'deleteAccount']);
+
+
+Route::prefix('admin')->middleware(['auth'])->group(function () {
+
+    Route::post('/account/{id}/delete', [App\Http\Controllers\AdminController::class, 'deleteAccount']);
+    Route::get('/profile', [App\Http\Controllers\AdminController::class, 'deleteAccount']);
+});
 

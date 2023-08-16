@@ -23,6 +23,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('data-analytics', require('./components/DataAnalyticsComponent.vue').default);
 Vue.component('rental-places', require('./components/RentalPlacesComponent.vue').default);
 Vue.component('account-details', require('./components/AccountDetails.vue').default);
+Vue.component('profile-details', require('./components/ProfileDetails.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

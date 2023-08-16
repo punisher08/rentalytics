@@ -46,7 +46,7 @@
                         </svg>
                     </a>
                     <ul class="submenu">
-                        <li>Profile Settings</li>
+                        <li><a href="{{route('admin-profile')}}"></a>Profile Settings</li>
                         <li>
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}

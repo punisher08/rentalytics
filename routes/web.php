@@ -35,6 +35,7 @@ Route::prefix('admin')->middleware(['auth','verifyrole'])->group(function () {
     Route::get('/data-analytics', [App\Http\Controllers\AdminController::class, 'dataAnalytics'])->name('admin-data-analytics');
     Route::get('/rental-places', [App\Http\Controllers\AdminController::class, 'rentalPlaces'])->name('admin-rental-places');
     Route::get('/{id}/rental-account-details', [App\Http\Controllers\AdminController::class, 'rentalAccountDetails'])->name('admin-rental-account-details');
+    Route::get('/profile', [App\Http\Controllers\AdminController::class, 'adminProfile'])->name('admin-profile');
     
     // POST 
 });
